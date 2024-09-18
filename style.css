@@ -1,30 +1,33 @@
+/* Importa fontes do Google Fonts: Roboto e Ubuntu */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+/* Estilo para o elemento body */
 body {
-    margin: 0;
-    background: linear-gradient(45deg, #DA70D6, #98FB98, #663399, #6A5ACD);
-    background-size: 600% 600%;
-    animation: gradientAnimation 15s ease infinite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    margin: 0; /* Remove a margem padrão do body */
+    background: linear-gradient(45deg, #DA70D6, #98FB98, #663399, #6A5ACD); /* Define um gradiente linear com múltiplas cores */
+    background-size: 600% 600%; /* Aumenta o tamanho do fundo para criar um efeito de animação suave */
+    animation: gradientAnimation 15s ease infinite; /* Aplica uma animação de gradiente contínua com duração de 15 segundos */
+    display: flex; /* Usa Flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: center; /* Alinha horizontalmente o conteúdo ao centro */
+    height: 100vh; /* Define a altura do body como 100% da altura da viewport */
 }
 
+/* Animação de gradiente */
 @keyframes gradientAnimation {
     0% {
-        background-position: 15% 0%;
+        background-position: 15% 0%; /* Define a posição inicial do gradiente */
     }
     25% {
-        background-position: 100% 0%;
+        background-position: 100% 0%; /* Move o gradiente para a direita */
     }
     50% {
-        background-position: 100% 100%;
+        background-position: 100% 100%; /* Move o gradiente para baixo e para a direita */
     }
     75% {
-        background-position: 20% 100%;
+        background-position: 20% 100%; /* Move o gradiente para a esquerda */
     }
     100% {
-        background-position: 0% 24%;
+        background-position: 0% 24%; /* Retorna o gradiente para a posição inicial, mas ligeiramente ajustado */
     }
 }
